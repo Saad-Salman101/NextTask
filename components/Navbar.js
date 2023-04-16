@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiFillCloseCircle, AiFillMinusCircle, AiFillPlusCircle, AiOutlineShoppingCart } from "react-icons/ai";
 import { BsBagCheckFill } from "react-icons/bs";
-import { MdAccountCircle } from "react-icons/md";
 import { useRef } from "react";
 
 const Navbar = ({ cart, addToCart, removeFromCart, clearCart }) => {

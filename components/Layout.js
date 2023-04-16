@@ -1,12 +1,8 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import React, { useRef, useContext, useEffect, useState } from 'react';
-import { AiFillCloseCircle, AiFillMinusCircle, AiFillPlusCircle, AiOutlineShoppingCart } from "react-icons/ai";
-import { BsBagCheckFill } from "react-icons/bs";
-import { MdAccountCircle } from "react-icons/md";
+
 // import { Store } from '../utils/Store';
 
-export default function Layout({ title, children, cart, addToCart, removeFromCart, clearCart }) {
+export default function Layout({ title, children}) {
 
   // const { state } = useContext(Store);
   // const { cart } = state;

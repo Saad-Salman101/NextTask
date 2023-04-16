@@ -1,24 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React, { useContext,useState,useEffect } from 'react';
 import Layout from '../../components/Layout';
-import data from '../../utils/data';
-// import { Store } from '../../utils/Store';
-import Navbar from '../../components/Navbar';
+
 
 
 export default function ProductScreen(props) {
 //  console.log(props.addToCart)
   // const { state, dispatch } = useContext(Store);
-  const router = useRouter();
-  const { query } = useRouter();
-  const { slug } = query;
+  // const router = useRouter();
+  // const { query } = useRouter();
  
 
   return (<>
-    {/* <Navbar key={subTotal} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart
-        } clearCart={clearCart} subTotal={subTotal}/> */}
     <Layout title={props.myproducts.name}>
       <div className="py-2">
         <Link href="/">back to products</Link>
@@ -88,8 +81,7 @@ export async function getStaticProps({ params }) {
   const { slug } = params;
   const res = await fetch(`https://dummyjson.com/products/${slug}`);
   const myproducts = await res.json();
-  const newprod=Array.from(myproducts)
-  // console.log(newprod)
+
 
   return {
     props: {

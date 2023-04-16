@@ -1,26 +1,19 @@
 import Layout from '../components/Layout';
 import ProductItem from '../components/ProductItem';
-import data from '../utils/data';
-// import fetch from 'node-fetch';
-import Link from 'next/link';
-import React, { useRef, useContext, useEffect, useState } from 'react';
-import { AiFillCloseCircle, AiFillMinusCircle, AiFillPlusCircle, AiOutlineShoppingCart } from "react-icons/ai";
-import { BsBagCheckFill } from "react-icons/bs";
-import { MdAccountCircle } from "react-icons/md";
 import Navbar from '../components/Navbar';
 
 export default function Home(myproducts,cart, addToCart, removeFromCart, clearCart,subTotal) {
   // console.log(myproducts.myproducts.products)
-  const toggleCart = () => {
-    if (ref.current.classList.contains("translate-x-full")) {
-        ref.current.classList.remove("translate-x-full")
-        ref.current.classList.add("translate-x-0")
-    }
-    else if (!ref.current.classList.contains("translate-x-full")) {
-        ref.current.classList.remove("translate-x-0")
-        ref.current.classList.add("translate-x-full")
-    }
-}
+//   const toggleCart = () => {
+//     if (ref.current.classList.contains("translate-x-full")) {
+//         ref.current.classList.remove("translate-x-full")
+//         ref.current.classList.add("translate-x-0")
+//     }
+//     else if (!ref.current.classList.contains("translate-x-full")) {
+//         ref.current.classList.remove("translate-x-0")
+//         ref.current.classList.add("translate-x-full")
+//     }
+// }
 const ref = useRef()
   return (
     <>

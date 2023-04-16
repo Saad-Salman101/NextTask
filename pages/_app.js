@@ -1,8 +1,7 @@
 import '../styles/globals.css';
 import Layout from '../components/Layout';
-import { StoreProvider } from '../utils/Store';
 import { useState, useEffect } from 'react';
-import ProductItem from '../components/ProductItem';
+
 
 
 function MyApp({ Component, pageProps }) {
@@ -84,11 +83,5 @@ function MyApp({ Component, pageProps }) {
   
 }
 
-MyApp.getInitialProps = async (appContext) => {
-  // ...
 
-  return {
-    // ...
-  }
-}
 export default MyApp;
