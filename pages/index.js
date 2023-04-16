@@ -14,7 +14,6 @@ export default function Home(myproducts,cart, addToCart, removeFromCart, clearCa
 //         ref.current.classList.add("translate-x-full")
 //     }
 // }
-const ref = useRef()
   return (
     <>
     <Layout title="Home Page">
